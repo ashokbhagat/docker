@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   currency-exchange:
-    image: ashokbhagat/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+    image: ashokbhagat/abimg-currency-exchange-service:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8000:8000"
@@ -20,7 +20,7 @@ services:
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
 
   currency-conversion:
-    image: ashokbhagat/mmv2-currency-conversion-service:0.0.1-SNAPSHOT
+    image: ashokbhagat/abimg-currency-conversion-service:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8100:8100"
@@ -37,7 +37,7 @@ services:
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
 
   api-gateway:
-    image: ashokbhagat/mmv2-api-gateway:0.0.1-SNAPSHOT
+    image: ashokbhagat/abimg-api-gateway:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8765:8765"
@@ -54,7 +54,7 @@ services:
       SPRING_ZIPKIN_SENDER_TYPE: rabbit
 
   naming-server:
-    image: ashokbhagat/mmv2-naming-server:0.0.1-SNAPSHOT
+    image: ashokbhagat/abimg-naming-server:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8761:8761"

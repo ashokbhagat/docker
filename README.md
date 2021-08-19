@@ -4,13 +4,13 @@
 
 - https://hub.docker.com/u/ashokbhagat
 - Currency Exchange Service 
-	- ashokbhagat/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+	- ashokbhagat/abimg-currency-exchange-service:0.0.1-SNAPSHOT
 - Currency Conversion Service
-	- ashokbhagat/mmv2-currency-conversion-service:0.0.1-SNAPSHOT
+	- ashokbhagat/abimg-currency-conversion-service:0.0.1-SNAPSHOT
 - Eureka
-	- ashokbhagat/mmv2-naming-server:0.0.1-SNAPSHOT
+	- ashokbhagat/abimg-naming-server:0.0.1-SNAPSHOT
 - API GATEWAY
-	- ashokbhagat/mmv2-api-gateway:0.0.1-SNAPSHOT
+	- ashokbhagat/abimg-api-gateway:0.0.1-SNAPSHOT
 
 ## URLS
 
@@ -36,11 +36,11 @@
 #### Commands
 ```
 docker run -p 9411:9411 openzipkin/zipkin:2.23
-docker push docker.io/ashokbhagat/mmv2-currency-exchange-service:0.0.1-SNAPSHOT
+docker push docker.io/ashokbhagat/abimg-currency-exchange-service:0.0.1-SNAPSHOT
 docker-compose --version
 docker-compose up
-docker push ashokbhagat/mmv2-naming-server:0.0.1-SNAPSHOT
-docker push ashokbhagat/mmv2-currency-conversion-service:0.0.1-SNAPSHOT
-docker push ashokbhagat/mmv2-api-gateway:0.0.1-SNAPSHOT
+docker push ashokbhagat/abimg-naming-server:0.0.1-SNAPSHOT
+docker push ashokbhagat/abimg-currency-conversion-service:0.0.1-SNAPSHOT
+docker push ashokbhagat/abimg-api-gateway:0.0.1-SNAPSHOT
 watch -n 0.1 curl http://localhost:8000/sample-api
 ```

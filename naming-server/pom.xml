@@ -67,10 +67,10 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>ashokbhagat/mmv2-${project.artifactId}:${project.version}</name>
+						<name>ashokbhagat/abimg-${project.artifactId}:${project.version}</name>
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
-				</configuration>				
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
